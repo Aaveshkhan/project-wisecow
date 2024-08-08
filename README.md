@@ -37,5 +37,9 @@ kubectl create secret tls wisecow-tls --cert=wisecow.crt --key=wisecow.key -n wi
 ```
 Ingress will automatically use the secret generated above
 
+## DNS
+I have used route53 as DNS, for this I have mapped the Ingress' LoadBalancer with the domain name
+<img width="1324" alt="Screenshot 2024-08-06 at 6 51 24 AM" src="https://github.com/user-attachments/assets/23bbede3-b585-4026-a3f9-f0bc4e02d734">
+
 ## Result
 <img width="802" alt="result" src="https://github.com/user-attachments/assets/c60b396f-b522-4ed1-af24-28fe0dd76c2a">
