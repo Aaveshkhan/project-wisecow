@@ -29,5 +29,9 @@ Deploy the wisecow application as a k8s app
 
 ## Implementing the tls
 ### run the following commands
-1. openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout wisecow.key -out wisecow.crt -subj "/CN=app.cloudcloun.shop/O=YourOrganization"
-2. kubectl create secret tls wisecow-tls --cert=wisecow.crt --key=wisecow.key -n wisecow
+```
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout wisecow.key -out wisecow.crt -subj "/CN=app.cloudcloun.shop/O=YourOrganization"
+```
+```
+kubectl create secret tls wisecow-tls --cert=wisecow.crt --key=wisecow.key -n wisecow
+```
