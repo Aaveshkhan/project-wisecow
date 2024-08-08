@@ -35,3 +35,4 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout wisecow.key -out wis
 ```
 kubectl create secret tls wisecow-tls --cert=wisecow.crt --key=wisecow.key -n wisecow
 ```
+Ingress will automatically use the secret generated above
